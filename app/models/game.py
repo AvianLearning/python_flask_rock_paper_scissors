@@ -1,5 +1,3 @@
-from app.models.player import *
-
 class Game:
 
     def __init__(self, player_1, player_2):
