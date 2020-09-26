@@ -13,7 +13,7 @@ class Game:
             return player_1
         elif self.player_1.choice == "paper" and self.player_2.choice == "rock":
             return player_1
-        elif self.player_1.choice == "paper" and self.player_1.choice == "scissors":
+        elif self.player_1.choice == "paper" and self.player_2.choice == "scissors":
             return player_2
         elif self.player_1.choice == "scissors" and self.player_2.choice == "rock":
             return player_2
