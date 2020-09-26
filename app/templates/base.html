@@ -9,10 +9,26 @@
     <title>Rock, Paper, Scissors</title>
 </head>
 
-<body>
-{% block content  %}
-    
-{% endblock  %}
+<body id="grid-container">
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+        <section id="left-sidebar">
+
+        </section>
+        <main>
+        <article id="main-content">
+            {% block content  %}
+
+            {% endblock  %}
+        </article>    
+    </main>
+    <section id=right-sidebar>
+
+    </section>
+    <footer>
+        Copyright Iain Radcliffe
+    </footer>
 </body>
 
 </html>

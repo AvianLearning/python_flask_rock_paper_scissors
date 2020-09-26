@@ -1,3 +1,67 @@
 body {
     font-family: 'Orbitron', sans-serif;
+    margin: 0;
 }
+
+header {
+    background-color: #0FD6F0;
+    grid-area: header;
+    text-align: center;
+}
+
+footer {
+    background-color: #0FD6F0;
+    grid-area: footer;
+    color: 000;
+    text-align: center;
+}
+
+#main-content {
+    padding: 32px;
+    background-color: #fff;
+    grid-area: main-content;
+  }
+
+  #left-sidebar {
+      background-color: #908989;
+      grid-area: left;
+  }
+
+  #right-sidebar {
+    background-color: #908989;
+    grid-area: right;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header'
+      'left main-content right'
+      'footer footer footer';
+      grid-template-columns: 2fr 6fr 2fr;
+  }
+
+.rules-button {
+        border: 0;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #CA16B2;
+        margin: auto;
+}
+
+    .rules-button a {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .rules-button:hover {
+        background-color: #B814A2;
+    }
+
+    .rules-button:active {
+        background-color: #bb14a2;
+    }

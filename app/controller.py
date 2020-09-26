@@ -21,6 +21,10 @@ def play(player_1_choice, player_2_choice):
         result = "It's a draw!"
     return render_template('index.html', result=result)
 
+@app.route('/welcome')
+def welcome():
+    return render_template('welcome.html')
+
 
 
 
