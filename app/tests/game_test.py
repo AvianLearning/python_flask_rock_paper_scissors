@@ -13,8 +13,6 @@ class TestGame(unittest.TestCase):
         self.game_2 = Game(self.player_3, self.player_4)
         self.game_3 = Game(self.player_2, self.player_3)
         self.game_4 = Game(self.player_1, self.player_3)
-        self.comp = Game.create_computer()
-        
 
     def test_can_find__winner_rock_scissors(self):
         self.assertEqual(self.player_1, self.game_1.find_winner(self.player_1, self.player_2))
@@ -28,4 +26,7 @@ class TestGame(unittest.TestCase):
     def test_can_find_winner_paper_rock(self):
         self.assertEqual(self.player_3, self.game_4.find_winner(self.player_1, self.player_3))
 
+    def test_can_find_computer_name(self):
+        weapon = computer_choice()
+        computer_player = Player("Computer", weapon)
 

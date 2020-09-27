@@ -13,5 +13,8 @@ class TestPlayer(unittest.TestCase):
     
     def test_can_find_player_choice(self):
         self.assertEqual("Scissors", self.player_2.choice)
+    
+
+  
    
         
