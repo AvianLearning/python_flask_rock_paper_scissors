@@ -31,6 +31,10 @@ def play_vs_computer():
     choice = request.form['choice']
 
     player = Player(player_name, choice)
+    computer = create_computer(name, weapon)
+    
+    
+
 
 
 
