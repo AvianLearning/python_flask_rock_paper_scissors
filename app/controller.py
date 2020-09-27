@@ -25,6 +25,14 @@ def play(player_1_choice, player_2_choice):
 def welcome():
     return render_template('welcome.html')
 
+@app.route('/play', methods=['POST'])
+def play_vs_computer():
+    player_name = request.form['name']
+    choice = request.form['choice']
+
+    player = Player(player_name, choice)
+
+
 
 
 

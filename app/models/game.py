@@ -1,3 +1,5 @@
+from random import choice
+
 class Game:
 
     def __init__(self, player_1, player_2):
@@ -19,10 +21,10 @@ class Game:
             return player_2
         elif self.player_1.choice == "scissors" and self.player_2.choice == "paper":
             return player_1
-    
-    
 
-    
+    def computer_weapon(self, name, weapon):
+        self.name = "Computer"
+        self.weapon = choice("rock", "paper", "scissors")
         
 
         
