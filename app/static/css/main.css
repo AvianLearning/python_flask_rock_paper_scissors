@@ -3,10 +3,26 @@ body {
     margin: 0;
 }
 
+#logo {
+    padding: 20px;
+    margin: 20px;
+    grid-area: logo;
+}
+
+header h1 {
+    grid-area: top-heading;
+}
+
 header {
     background-color: #0FD6F0;
     grid-area: header;
     text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    grid-template-areas:
+      'logo top-heading';
+      grid-template-columns: 2fr 8fr;
 }
 
 footer {
@@ -20,6 +36,11 @@ footer {
     padding: 32px;
     background-color: #fff;
     grid-area: main-content;
+    text-align: center;
+  }
+
+  #main-content ul {
+      list-style-position: inside;
   }
 
   #left-sidebar {
