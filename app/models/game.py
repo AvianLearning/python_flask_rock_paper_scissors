@@ -21,11 +21,6 @@ class Game:
             return player_2
         elif self.player_1.choice == "scissors" and self.player_2.choice == "paper":
             return player_1
-    
-    # def computer_choice(self):
-    #     weapon_list = ["rock", "paper", "scissors"]
-    #     self.weapon = choice(weapon_list) 
-    #     return self.weapon
 
 
 

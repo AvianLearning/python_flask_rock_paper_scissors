@@ -26,7 +26,3 @@ class TestGame(unittest.TestCase):
     def test_can_find_winner_paper_rock(self):
         self.assertEqual(self.player_3, self.game_4.find_winner(self.player_1, self.player_3))
 
-    def test_can_find_computer_name(self):
-        weapon = computer_choice()
-        computer_player = Player("Computer", weapon)
-
